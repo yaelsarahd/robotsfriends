@@ -32,9 +32,9 @@ class App extends Component {
       return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
     });
     // console.log(filteredRobots);
-    if (this.state.robots.length === 0){
-      return <h2>Loading...</h2>;
-    } else {
+    // if (this.state.robots.length === 0){
+    //   return <h2>Loading...</h2>;
+    // } else {
 		return (
 			<div className='tc'>
         <h1 className= 'title'>Robots Friends</h1>
@@ -47,6 +47,6 @@ class App extends Component {
 		);
 	}
 }
-}
+
 
 export default App;
